@@ -64,8 +64,3 @@ def change_dns(SecretId, SecretKey, Domain, SuDomain, RecordType, RecordId: int,
             print(f"[{time.strftime('%Y-%m-%d %H:%M:%S', time.localtime())}]第{i + 1}次请求失败\n错误：{err}")
 
     return False
-
-
-if __name__ == "__main__":
-    change_dns("AKIDwiFVUCdngaDZeSzFEwMVNyIM9fusa1B4", "dz4sPecJjslOkpc9QQ9akcEZeSzFEgrl", "yigefz.net", "server",
-               "AAAA", 1316792446, "240e:335:4881:6b90:731:cce3:233f:ef62")
