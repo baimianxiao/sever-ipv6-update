@@ -57,7 +57,7 @@ def change_dns(SecretId, SecretKey, Domain, SuDomain, RecordType, RecordId: int,
             # 返回的resp是一个ModifyRecordResponse的实例，与请求对象对应
             resp = client.ModifyRecord(req)
             # 输出json格式的字符串回包
-            print(f"[{time.strftime('%Y-%m-%d %H:%M:%S', time.localtime())}]" + resp.to_json_string())
+            print(f"[{time.strftime('%Y-%m-%d %H:%M:%S', time.localtime())}]" + "DNS修改成功")
             return True
 
         except TencentCloudSDKException as err:
